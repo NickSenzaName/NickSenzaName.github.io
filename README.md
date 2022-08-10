@@ -5,8 +5,8 @@
 	Theme:
 		Spectral by HTML5 UP html5up.net (html5up.net/license) | @ajlkn 
 
-	Demo Images:
-		Unsplash (unsplash.com)
+	Images:
+		"Green Grass on Forest", Rudolf Jakkel (https://www.pexels.com/@jakkel/)
 
 	Icons:
 		Font Awesome (fontawesome.io)
