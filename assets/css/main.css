@@ -3455,6 +3455,18 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+		#header img {
+			-moz-transition: opacity 0.2s ease;
+			-webkit-transition: opacity 0.2s ease;
+			-ms-transition: opacity 0.2s ease;
+			transition: opacity 0.2s ease;
+			height: 2em;
+			left: 0;
+			line-height: inherit;
+			position: absolute;
+			top: 0.5em;
+		}
+
 		#header h1 {
 			-moz-transition: opacity 0.2s ease;
 			-webkit-transition: opacity 0.2s ease;
