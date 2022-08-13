@@ -3523,13 +3523,14 @@ input, select, textarea {
 				line-height: inherit;
 			}
 
+				/* This is the reason why the logo was resized too much on screen dimensions change
 					@media screen and (max-width: 736px) {
 
 					#header h1 a {
 						font-size: 0.8em;
 					}
 
-				}
+				} */
 
 		#header nav {
 			height: inherit;
