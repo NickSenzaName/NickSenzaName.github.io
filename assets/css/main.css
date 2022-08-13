@@ -2683,6 +2683,22 @@ input, select, textarea {
 		list-style: none;
 	}
 
+	@media screen and (max-width: 736px) {
+
+		ul.multicolumn {
+			height: 150px;
+		}
+
+	}
+
+	@media screen and (max-width: 400px) {
+
+		ul.multicolumn {
+			height: 220px;
+		}
+
+	}
+
 /* Spotlight */
 
 	.spotlight {
