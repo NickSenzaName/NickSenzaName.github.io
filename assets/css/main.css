@@ -2670,6 +2670,15 @@ input, select, textarea {
 
 			}
 
+/* Multicolumn list */
+	ul.multicolumn {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+
 /* Spotlight */
 
 	.spotlight {
