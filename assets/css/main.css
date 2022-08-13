@@ -2726,11 +2726,9 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.spotlight .image iframe {
-				margin: 0;
-				border-radius: 0;
+			.spotlight .image embed {
 				width: 100%;
-				max-height: fit-content;
+				vertical-align: middle;
 			}
 
 		.spotlight .content {
