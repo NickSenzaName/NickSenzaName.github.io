@@ -7,6 +7,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Fix per testo delle icone devicon nella sezione my skills */
+.fix_text {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 1.15em;
+	line-height: 1.4em;
+	letter-spacing: 0.225em;
+}
+
+.fix_h3 {
+	line-height: inherit;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2656,7 +2668,36 @@ input, select, textarea {
 						border-top: 0;
 					}
 
+					.features li:last-child {
+						border-bottom: solid 2px #464981;
+					}
+
 			}
+
+/* Multicolumn list */
+	ul.multicolumn {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		ul.multicolumn {
+			height: 150px;
+		}
+
+	}
+
+	@media screen and (max-width: 400px) {
+
+		ul.multicolumn {
+			height: 220px;
+		}
+
+	}
 
 /* Spotlight */
 
@@ -2683,6 +2724,11 @@ input, select, textarea {
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+			}
+
+			.spotlight .image embed {
+				width: 100%;
+				vertical-align: middle;
 			}
 
 		.spotlight .content {
@@ -3455,6 +3501,43 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+		#header img {
+			height: 2em;
+			left: 0;
+			line-height: inherit;
+			position: absolute;
+			top: 0.5em;
+		}
+
+		#header ul.icons_nav_bar {
+			cursor: default;
+			text-align: right;
+			list-style: none;
+			font-size: 1.5em;
+		}
+
+		@media screen and (max-width: 300px) {
+			/* When the screen have a width less then 300px hide the social media icons */
+
+			#header ul.icons_nav_bar { 
+				visibility: hidden;
+			}
+
+		}
+
+			#header ul.icons_nav_bar li {
+				display: inline-block;
+				padding: 0 1em 0 0;
+			}
+
+			#header ul.icons_nav_bar a {
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+				#header ul.icons_nav_bar a:hover {
+					color: #fff;
+				}
+
 		#header h1 {
 			-moz-transition: opacity 0.2s ease;
 			-webkit-transition: opacity 0.2s ease;
@@ -3474,13 +3557,14 @@ input, select, textarea {
 				line-height: inherit;
 			}
 
-				@media screen and (max-width: 736px) {
+				/* This is the reason why the logo was resized too much on screen dimensions change
+					@media screen and (max-width: 736px) {
 
 					#header h1 a {
 						font-size: 0.8em;
 					}
 
-				}
+				} */
 
 		#header nav {
 			height: inherit;
@@ -3757,6 +3841,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		text-align: center;
 		max-width: 45em;
 	}
 
@@ -3765,8 +3850,7 @@ input, select, textarea {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			padding-right: 3em;
-			width: 70%;
+			width: 100%;
 		}
 
 			#cta .inner header p {
